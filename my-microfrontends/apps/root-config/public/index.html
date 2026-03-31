@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/npm/systemjs/dist/system.min.js"></script>
+    <script type="systemjs-importmap">
+        {
+          "imports": {
+            "react": "https://cdn.jsdelivr.net/npm/react@18/umd/react.production.min.js",
+            "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.production.min.js",
+            "@org/auth": "http://localhost:9001/org-auth.js",
+            "@org/marketing": "http://localhost:9002/org-marketing.js"
+          }
+        }
+    </script>
+</head>
+<body>
+<div id="single-spa-application:@org/auth"></div>
+<div id="single-spa-application:@org/marketing"></div>
+</body>
+</html>
